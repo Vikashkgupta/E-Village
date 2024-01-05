@@ -1,0 +1,184 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="icon" href="~/Content/images/asaa-newlogo-170x124.png" />
+
+    <!-- bootstrap CSS files link -->
+    <link rel="stylesheet" href="~/content/css/aos.css">
+    <link rel="stylesheet" href="~/content/css/style.css">
+    <link rel="stylesheet" href="~/content/css/hover-min.css">
+    <link rel="stylesheet" href="~/content/css/icofont.min.css">
+    <link rel="stylesheet" href="~/content/css/animate.min.css">
+    <link rel="stylesheet" href="~/content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/content/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/content/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="~/content/assets/vendor/icofont/icofont.min.css">
+
+
+    <!-- bootstrap current virsion links  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+    <!-- Remixicon CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- font awasome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- main css file link -->
+    <link rel="stylesheet" href="~/content/main.css">
+
+
+    <!-- links for footer-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- links for gallery -->
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+
+
+</head>
+<body>
+
+    <div class="feedback_btn"><a href="/home/feedback">
+        <button class="btn btn-success">FEEDBACK </button>
+    </a></div>
+
+    <div class="contact_btn"><a href="/home/contact_us">
+        <button class="btn btn-success">CONTACT US </button>
+    </a></div>
+
+
+    <!-- navbar start -->
+    <header id="header" class="fixed-top" data-aos="fade-down">
+        <div class="container d-flex" data-aos="fade-down">
+            <h1 class="logo mr-auto"><a href="#">
+                <img src="~/Content/images/asaa-newlogo-170x124.png" /></a></h1>
+            <nav class="nav nav-menu d-none d-lg-block">
+                <ul>
+                    <li><a href="/home/index">Home</a></li>
+                    <li><a href="/home/about_village">About Village</a></li>
+                    <li><a href="/home/photo_gallery">Photo Gallery</a></li>
+                    <li><a href="/Home/Registration">Registration</a></li>
+                    <li><a href="https://www.india.gov.in/my-government/schemes" target="_blank">Schemes</a></li>
+                    <!--    <li><a href="/home/schemes">Schemes</a></li>  -->
+                    <li class="drop-down"><a href="#">Links</a>
+                        <ul>
+                            <li><a href="https://upbhulekh.gov.in/" target="_blank">Bhulekh</a></li>
+                            <li><a href="https://nrega.nic.in/" target="_blank">Manrega</a></li>
+                            <li><a href="https://scholarship.up.gov.in/" target="_blank">Scholarship</a></li>
+                            <li><a href="https://edistrict.up.gov.in/" target="_blank">eDistrict</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">Login</a>
+                        <ul>
+                            <li><a href="/home/Public_Login">Public Login</a></li>
+                            <li><a href="/home/Admin_Login">Admin Login</a></li>                           
+                        </ul>
+                    </li>
+                    <li><a href="/home/contact_us">Contact Us</a></li>
+                    <li><a href="/home/Feedback">Feedback</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- navbar end -->
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+
+    <br>
+
+    <!-- Footer -->
+    <section id="footer" data-aos="fade-up">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a target="_blank" href="https://panchayat.gov.in/"><i class="fa fa-angle-double-right"></i>Ministry of Panchayati Raj</a></li>
+                        <li><a target="_blank" href="https://swachhbharatmission.gov.in/"><i class="fa fa-angle-double-right"></i>Swach Bharat Mission</a></li>
+                        <li><a target="_blank" href="https://www.mha.gov.in/en"><i class="fa fa-angle-double-right"></i>Ministry of Home Affairs</a></li>
+                        <li><a target="_blank" href="https://eci.gov.in/"><i class="fa fa-angle-double-right"></i>Election Commition of India</a></li>
+                        <li><a target="_blank" href="https://nhrc.nic.in/"><i class="fa fa-angle-double-right"></i>National Human Right Commition</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a target="_blank" href="https://upbhulekh.gov.in/"><i class="fa fa-angle-double-right"></i>Bhulekh</a></li>
+                        <li><a target="_blank" href="https://nrega.nic.in/"><i class="fa fa-angle-double-right"></i>Manrega</a></li>
+                        <li><a target="_blank" href="https://scholarship.up.gov.in/"><i class="fa fa-angle-double-right"></i>Scholorship</a></li>
+                        <li><a target="_blank" href="https://missionantyodaya.nic.in/"><i class="fa fa-angle-double-right"></i>Antyodaya</a></li>
+                        <li><a target="_blank" href="https://edistrict.up.gov.in/"><i class="fa fa-angle-double-right"></i>Edistrict</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a target="_blank" href="https://legislative.gov.in/"><i class="fa fa-angle-double-right"></i>Vidhi Sahitya Prakashan</a></li>
+                        <li><a target="_blank" href="https://cbi.gov.in/"><i class="fa fa-angle-double-right"></i>Central Bureau of investigation</a></li>
+                        <li><a target="_blank" href="https://www.uppolice.gov.in/"><i class="fa fa-angle-double-right"></i>Police aur Seva</a></li>
+                        <li><a target="_blank" href="https://doj.gov.in/"><i class="fa fa-angle-double-right"></i>Department of Justice</a></li>
+                        <li><a target="_blank" href="https://sansad.in/poi" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Parliament of India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p>
+                        <u><a href="https://www.nationaltransaction.com/">eVillage</a></u> is a Registered MSP/ISO
+                        of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]
+                    </p>
+                    <p class="h6">
+                        © | 2023 | All Rights Reversed | <a class="text-green ml-2" href="#"
+                            target="_blank">Desined & Developed by Vikash Kumar Gupta.</a>
+                    </p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <!-- ./Footer -->
+
+    <!-- =================================================================================================================================== -->
+    <!-- bootstrap and JS files link -->
+    <script src="~/content/js/jquery.min.js"></script>
+    <script src="~/content/js/jquery.waypoints.min.js"></script>
+    <script src="~/content/js/counterup.min.js"></script>
+    <script src="~/content/js/owl.carousel.js"></script>
+    <script src="~/content/js/aos.js"></script>
+    <script src="~/content/js/main.js"></script>
+    <!-- Main JS file link -->
+    <script src="~/content/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "UpdateRecord";
+    Layout = "~/Views/Shared/AdminMasterPage.cshtml";
+}
+
+
+@model E_Village.Models.Table_Registration
+
+
+
+
+
+
+
+<style>
+
+       #displayImage {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            /*    box-shadow:0px 0px 3px 3px lightgray;   */
+            transition: 1s;
+        }
+
+            #displayImage:hover {
+                transform: scale(1.2);
+            }
+            
+</style>
+
+  <script>
+
+        function getCaptcha()
+        {
+            var strArr = "1203495867bvhfuriekdmcsla,zncxuroeiwuqyrtevfhskla";
+            var code = "";
+            for(var i=0; i<5; i++)
+            {
+                code = code+strArr[Math.floor(Math.random()*20)];
+            }
+            return code;
+        }
+
+        function demo()
+        {
+            var c = getCaptcha();
+            document.getElementById('ct1').innerHTML = c;
+            document.getElementById('hdn1').value = c;
+
+        }
+
+    </script>
+<div class="card-body">
+                    <form action="/admin/UpdateRecord" method="post" enctype="multipart/form-data">
+
+                        <input type="hidden" name="Email" value="@Model.Email"/>
+
+                        <center>
+                             <div class="displayImage">
+                                 <img id="displayImage" src="../content/Profile_Pictures/@Model.Profile_Picture"/>
+                            <input name="Profile_Picture" value="@Model.Profile_Picture" required type="file" id="imageInput" class="form form-control" placeholder="Profile pic" style="background:transparent;width:125px;height:40px; border-radius:10px;color:transparent;border:none" accept="image/*">
+                        </div>
+                       </center>
+
+
+
+                        <br />
+
+
+                        <input name="Name" value="@Model.Name" required type="text" class="form form-control" placeholder="Full Name" >
+
+                        <br />
+
+
+                        <input name="Father_Name" value="@Model.Father_Name" required type="text" class="form-control" placeholder="Father's Name" >
+                        <br />
+
+
+                        <input name="DOB" value="@Model.DOB" required type="date" class="form-control" placeholder="DOB" >
+                        <br />
+
+
+                        <textarea name="Address" required class="form-control" placeholder="Address" rows="1" >@Model.Address</textarea>
+                        <br />
+
+                        <input name="Mobile" value="@Model.Mobile" required type="number" class="form-control" placeholder="Mobile">
+
+                        <br />
+
+
+                        Gender
+                        <input name="Password" value="@Model.Password" required type="password" class="form-control" placeholder="password" >
+
+                        <br />
+
+
+
+
+                        <!-- capcha -->
+                        <h3 style="display: inline;">Captcha </h3>
+                        <span style="color: green; font-size: 30px; background: url('../Content/images/captcha.png'); border-radius: 5px;"><strike id="ct1">hgytd</strike></span>
+     
+                        <span style="color:red; font-size:30px; cursor:pointer;" onclick="demo()"> 🔃</span>
+                        <br />
+                        <input type="text" name="ct1" class="form form-control" placeholder="Enter captcha code " />
+                        <input type="hidden" id="hdn1" name="hdn1"/>
+
+                        <br />
+                        <!-- capcha -->
+
+
+
+                        <div class="row align-items-center remember">
+                            <input type="checkbox">Remember Me
+				
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Register" class="btn float-right btn-success login_btn">
+                        </div>
+                    </form>
+                </div>

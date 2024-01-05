@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="E_VillageModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="E_VillageModelStoreContainer">
+    <EntitySet Name="Table_Contact" EntityType="E_VillageModel.Store.Table_Contact" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Table_Feedback" EntityType="E_VillageModel.Store.Table_Feedback" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Table_Login" EntityType="E_VillageModel.Store.Table_Login" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Table_Registration" EntityType="E_VillageModel.Store.Table_Registration" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Table_Contact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Mobile" Type="varchar" MaxLength="15" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Message" Type="varchar" MaxLength="500" />
+    <Property Name="Contact_Date" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Table_Feedback">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Feedback" Type="varchar" MaxLength="500" />
+    <Property Name="Feedback_Date" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Table_Login">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Table_Registration">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Profile_Picture" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Father_Name" Type="varchar" MaxLength="50" />
+    <Property Name="DOB" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="100" />
+    <Property Name="Mobile" Type="varchar" MaxLength="15" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Confirm_Password" Type="varchar" MaxLength="50" />
+    <Property Name="Registration_Date" Type="varchar" MaxLength="50" />
+  </EntityType>
+</Schema>

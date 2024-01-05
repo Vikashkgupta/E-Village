@@ -1,0 +1,244 @@
+/* Colors variable declare */
+/*
+:root {
+    --main-color: #00712f;
+    --background-color: gray;
+    --hover-color: rgb(70, 178, 173);
+    --hover_2: #008000;
+}
+    */
+
+body {
+    background: lightgray;
+}
+
+    /* -------------------------------------------------------------------------------------------------------------------------------- */
+    /* code for scroll bar */
+
+    body::-webkit-scrollbar {
+        background: transparent;
+        width: 5px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        /* background: linear-gradient(red,blue); */
+        background: #3fa15d;
+        border-radius: 5px;
+        width: 5px;
+    }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section {
+    padding: 60px 0;
+}
+
+    section .section-title {
+        text-align: center;
+        color: #007b5e;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+#footer {
+    background: #00712f !important;
+}
+
+    #footer h5 {
+        padding-left: 10px;
+        border-left: 3px solid #eeeeee;
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+
+    #footer a {
+        color: #ffffff;
+        text-decoration: none !important;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }
+
+    #footer ul.social li {
+        padding: 3px 0;
+    }
+
+        #footer ul.social li a i {
+            margin-right: 5px;
+            font-size: 25px;
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+        }
+
+        #footer ul.social li:hover a i {
+            font-size: 30px;
+            margin-top: -10px;
+        }
+
+        #footer ul.social li a,
+        #footer ul.quick-links li a {
+            color: #ffffff;
+        }
+
+            #footer ul.social li a:hover {
+                color: #eeeeee;
+            }
+
+    #footer ul.quick-links li {
+        padding: 3px 0;
+        -webkit-transition: .5s all ease;
+        -moz-transition: .5s all ease;
+        transition: .5s all ease;
+    }
+
+        #footer ul.quick-links li:hover {
+            padding: 3px 0;
+            margin-left: 5px;
+            font-weight: 700;
+        }
+
+        #footer ul.quick-links li a i {
+            margin-right: 5px;
+        }
+
+        #footer ul.quick-links li:hover a i {
+            font-weight: 700;
+        }
+
+@media (max-width:767px) {
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* code for home page */
+.home_backg {
+    width:100%; 
+    margin-top:75px;
+}
+.home_backg img{
+    
+    width: 100%;
+}
+
+
+.home_Our_Services img {
+    height:90%;
+    border-radius: 20px;
+    box-shadow:0px 0px 5px 0px;
+}
+
+.home_Our_Services p {
+    font-weight: 400;
+    text-align:justify;
+}
+
+
+.home_Our_Services .home_learn {
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    background: #00712f;
+    padding: 7px;
+}
+
+    .home_Our_Services .home_learn a {
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+@media(max-width:768px) {
+   
+}
+
+
+/*home_OUR_VISION*/
+
+.home_OUR_VISION {
+text-align:center;
+background:#f3f3f3;
+}
+
+.home_OUR_VISION .row h1{
+    font-weight:400;
+    }
+.home_features .row h1{
+    font-weight:400;
+    }
+.home_objective .row h1{
+    font-weight:400;
+    }
+.home_features .row h3{
+    font-weight:500;
+    }
+@media (max-width:767px) {
+    .home_features .row{
+    text-align:center;
+    }
+}
+
+.home_features i{
+color:#00712f;
+}
+.fa-solid {
+color:red;
+
+}
+
+.home_objective {
+background:#f3f3f3;
+}
+
+.home_objective li{
+padding:10px 10px;
+}
+
+
+
+/* about page */
+
+.about_about li{
+padding:10px 10px;
+}
+
+
+/* gallery */
+
+.gallery img{
+    border-radius:20px 20px 0px 0px;
+    box-shadow:-1px 0px 7px 2px gray;
+}
+
+
+
+/* feedback button */
+
+.contact_btn {
+    
+    position:fixed;
+    top:180px;
+    right:-37px;
+    z-index:1;
+    transform:rotate(90deg);
+}
+.feedback_btn {
+     position:fixed;
+    top:300px;
+    right:-30px;
+    z-index:1;
+    transform:rotate(90deg);
+}
