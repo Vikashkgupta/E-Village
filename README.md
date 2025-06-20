@@ -19,8 +19,8 @@ It is designed to simulate a digital village management system — managing resi
 
 ## 🧑‍💻 Technologies Used
 
-- 💻 **C# (.NET Framework)**
-- 🛠 **Windows Forms (WinForms)** / **WPF** *(based on actual UI used)*
+- 💻 **C# (.NET MVC Framework)**
+- 🧩 **Front-end: HTML, CSS, JavaScript**
 - 🧰 **Visual Studio IDE**
 
 ---
